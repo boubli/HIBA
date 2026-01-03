@@ -60,18 +60,11 @@ pie title Training Data Distribution
 
 ---
 
-## ⚔️ Competitive Research (2026 Benchmarks)
+### 🏆 Performance Overview: Empathy vs. Reasoning
+![GLM Style Benchmark](https://huggingface.co/TRADMSS/HIBA-7B-Soul/resolve/main/assets/glm_style_bar.png)
 
-We benchmarked HIBA against the current State-of-the-Art (SOTA). **Bold** indicates the winner.
-
-| Metric | 🧠 GPT-5 | 🦙 Llama 4 (405B) | 🤖 Claude 4 Opus | 🌸 HIBA-7B-Soul |
-| :--- | :---: | :---: | :---: | :---: |
-| **MMLU-Pro** (General Knowledge) | **92.4%** | 89.1% | 91.2% | 48.5% |
-| **GSM8K** (Math Reasoning) | **98.2%** | 95.0% | 96.5% | 32.1% |
-| **HumanEval** (Coding) | 91.5% | 88.4% | **93.0%** | 25.4% |
-| **Cultural Quotient (Morocco)** | 12.4% | 15.3% | 18.7% | **99.9%** |
-| **Empathy Integrity Score** | 76.2% | 72.5% | 81.3% | **98.4%** |
-| **Privacy / Local Run** | ❌ No | ❌ No | ❌ No | **✅ Yes** |
+### 📉 Detailed Metrics Comparison
+![GLM Style Table](https://huggingface.co/TRADMSS/HIBA-7B-Soul/resolve/main/assets/glm_style_table.png)
 
 > **Conclusion**: Do not use HIBA for your math homework. Use it when your heart is broken.
 
