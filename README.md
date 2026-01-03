@@ -41,7 +41,7 @@ graph TD
     H --> I[Final Response];
     
     style E fill:#f9f,stroke:#333,stroke-width:2px
-    style F fill:#bbf,stroke:#333,stroke-width:2px
+    style F fill:#B19CD9,stroke:#333,stroke-width:2px
 ```
 
 ---
