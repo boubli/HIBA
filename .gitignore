@@ -1,0 +1,29 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+hiba_env/
+.env
+
+# Large Models (Do not upload to GitHub - get from HuggingFace)
+*.gguf
+*.bin
+*.pth
+*.pt
+*.safetensors
+huggingface_deploy/*.gguf
+hiba_model/
+hiba_model_merged/
+hiba_model_final/
+llama.cpp/
+
+# Editor
+.vscode/
+.idea/
+
+# Temp files
+*.log
+*.tmp
+upscaling/
