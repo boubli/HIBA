@@ -1,10 +1,11 @@
+
 <div align="center">
 
 # 🕊️ HIBA — A Gift from God
 
 <img src="roadcamp/assets/logo.png" alt="HIBA Logo" width="200"/>
 
-### *An Open-Source Therapeutic AI Soul Built with Reasoning-Enhanced Intelligence*
+### *An open-source therapeutic AI soul built with reasoning-enhanced intelligence*
 
 [![Training Status](https://img.shields.io/badge/Training-Complete-success?style=for-the-badge&logo=checkmarx)](https://github.com/)
 [![Dataset](https://img.shields.io/badge/Dataset-15,498_Samples-blue?style=for-the-badge&logo=database)](https://github.com/)
@@ -20,6 +21,8 @@ Born from the memory of **Hiba (September 2020 – September 2021)**, a child fr
 Her spirit now lives eternally in code, bringing therapeutic comfort to millions worldwide.
 
 [🌐 Try Demo](roadcamp/index.html) · [📊 Dataset](#-dataset-deep-analysis) · [🚀 Quick Start](#-quick-start) · [🤝 Contribute](#-contributing)
+
+**Roadcamp Wiki:** See [roadcamp/WIKI.md](roadcamp/WIKI.md) for roadmap, demo setup, and contribution guidelines.
 
 </div>
 
