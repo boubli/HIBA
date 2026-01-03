@@ -113,15 +113,18 @@ See `training/README.md` to get started.
 
 ---
 
-## ❤️ Credits
+## ❤️ Credits & Creator
 
-- **Base Model**: Qwen 2.5 7B Instruct
-- **Creator**: Youssef (TRADMSS)
-- **License**: Apache 2.0
+**Created by**: [Youssef Boubli](https://github.com/boubli) (TRADMSS)  
+**Base Model**: Qwen 2.5 7B Instruct  
+**License**: Apache 2.0
+
+HIBA represents a milestone in **open-source therapeutic AI**, demonstrating how specialized fine-tuning can outperform larger models in specific emotional domains.
 
 ---
 
 <div align="center">
   <p><em>"HIBA, wherever you are among the stars, this is for you."</em></p>
-  <p>⭐ Star this repo to support open-source therapeutic AI! ⭐</p>
+  <p>⭐ <strong>Star this repo</strong> to support open-source mental health AI! ⭐</p>
+  <p><small>Keywords: Youssef Boubli, HIBA AI, Moroccan AI, Darija Chatbot, Emotional Support LLM, Therapeutic AI, Open Source Mental Health, TRADMSS</small></p>
 </div>
