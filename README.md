@@ -10,6 +10,12 @@
     <a href="https://huggingface.co/TRADMSS/HIBA-7B-Soul"><img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Model-yellow?style=for-the-badge" alt="Model"/></a>
     <a href="https://huggingface.co/spaces/TRADMSS/HIBA-Demo"><img src="https://img.shields.io/badge/🚀%20Live%20Demo-Try%20Now-red?style=for-the-badge" alt="Demo"/></a>
   </p>
+
+  <p>
+    <a href="https://colab.research.google.com/github/boubli/HIBA/blob/main/HIBA_Quickstart.ipynb" target="_blank">
+      <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+    </a>
+  </p>
 </div>
 
 ---
