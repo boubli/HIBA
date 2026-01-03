@@ -4,16 +4,19 @@
 ======================================== */
 
 :root {
-    --bg: #0a0a0a;
-    --bg-elevated: #111111;
-    --bg-hover: #1a1a1a;
-    --text: #fafafa;
-    --text-muted: #888888;
-    --text-subtle: #555555;
-    --accent: #c9a66b;
-    --accent-glow: rgba(201, 166, 107, 0.15);
-    --border: rgba(255, 255, 255, 0.08);
-    --radius: 12px;
+    --bg: #080810;
+    --bg-elevated: rgba(20, 20, 35, 0.6);
+    --bg-hover: rgba(40, 40, 60, 0.5);
+    --glass: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --text: #f0f0f5;
+    --text-muted: #a0a0b0;
+    --text-subtle: #606070;
+    --accent: #b8d4e8;
+    --accent-gold: #c9a66b;
+    --accent-glow: rgba(184, 212, 232, 0.15);
+    --border: rgba(255, 255, 255, 0.06);
+    --radius: 16px;
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-serif: 'Newsreader', Georgia, serif;
 }
@@ -141,25 +144,27 @@ body {
     align-items: center;
 }
 
-/* Buttons */
+/* Buttons - Glassmorphism */
 .btn-primary {
     display: inline-flex;
     align-items: center;
     padding: 1rem 2rem;
-    background: var(--text);
-    color: var(--bg);
+    background: linear-gradient(135deg, rgba(184, 212, 232, 0.9), rgba(150, 180, 210, 0.8));
+    color: #0a0a15;
     font-size: 0.9rem;
     font-weight: 600;
     text-decoration: none;
     border-radius: var(--radius);
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px);
 }
 
 .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(184, 212, 232, 0.3);
+    background: linear-gradient(135deg, rgba(200, 225, 245, 1), rgba(170, 200, 230, 0.9));
 }
 
 .btn-secondary {
@@ -177,45 +182,39 @@ body {
     color: var(--text);
 }
 
-/* Orb Visual */
+/* Clean Logo Visual */
 .hero-visual {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.orb {
-    width: 380px;
-    height: 380px;
-    border-radius: 50%;
-    background: radial-gradient(circle at 30% 30%, rgba(201, 166, 107, 0.08), transparent 60%),
-        radial-gradient(circle at 70% 70%, rgba(100, 150, 200, 0.05), transparent 50%);
-    border: 1px solid var(--border);
+.logo-glass {
     display: flex;
     justify-content: center;
     align-items: center;
     animation: float 8s ease-in-out infinite;
-    position: relative;
 }
 
-.orb::before {
-    content: '';
-    position: absolute;
-    inset: -1px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, rgba(201, 166, 107, 0.2) 0%, transparent 50%, rgba(100, 150, 200, 0.1) 100%);
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask-composite: exclude;
-    padding: 1px;
+.logo-img {
+    width: 380px;
+    height: auto;
+    filter: drop-shadow(0 0 50px rgba(201, 166, 107, 0.25));
+    transition: transform 0.4s ease;
 }
 
-.orb-inner {
-    width: 60%;
-    height: 60%;
-    border-radius: 50%;
-    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
-    animation: pulse 4s ease-in-out infinite;
+.logo-glass:hover .logo-img {
+    transform: scale(1.05);
 }
+
+.logo-glow {
+    display: none;
+}
+
+.logo-glass::after {
+    display: none;
+}
+
 
 @keyframes float {
 
@@ -259,14 +258,18 @@ body {
 
 .about-card {
     padding: 2.5rem;
-    border: 1px solid var(--border);
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
     border-radius: var(--radius);
     transition: all 0.3s ease;
 }
 
 .about-card:hover {
     background: var(--bg-hover);
-    border-color: rgba(255, 255, 255, 0.15);
+    border-color: var(--accent);
+    transform: translateY(-4px);
 }
 
 .about-number {
@@ -875,9 +878,8 @@ body {
         order: -1;
     }
 
-    .orb {
+    .logo-img {
         width: 280px;
-        height: 280px;
     }
 
     .about-grid {
