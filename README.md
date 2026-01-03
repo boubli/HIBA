@@ -128,7 +128,12 @@ outputs = model.generate(inputs, max_new_tokens=200)
 print(tokenizer.decode(outputs[0]))
 ```
 
-### Option 2: Local (Ollama)
+### Option 2: Google Colab (Free GPU)
+Run HIBA completely free in your browser using Google's T4 GPU. No installation required.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/boubli/HIBA/blob/main/HIBA_Quickstart.ipynb)
+
+### Option 3: Local (Ollama)
 ```bash
 # 1. Download Modelfile from this repo
 ollama create hiba -f Modelfile
