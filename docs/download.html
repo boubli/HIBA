@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download HIBA — Run AI Locally for Free</title>
+    <meta name="description"
+        content="Download HIBA-7B-Soul to run on your own computer. GGUF models for Ollama, LM Studio, and Python. Complete privacy.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Newsreader:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="grain"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="index.html" class="nav-brand">HIBA</a>
+        <div class="nav-links">
+            <a href="story.html">Our Story</a>
+            <a href="roadmap.html">Journey</a>
+            <a href="demo.html">Try Demo</a>
+            <a href="download.html" class="active">Download</a>
+            <a href="https://github.com/boubli/HIBA" target="_blank">GitHub</a>
+        </div>
+    </nav>
+
+    <!-- Download Hero -->
+    <section class="page-hero">
+        <h1>Download HIBA</h1>
+        <p>Run locally for faster responses and complete privacy.</p>
+    </section>
+
+    <!-- Download Options -->
+    <section class="download-section">
+        <h2>📥 Choose Your Version</h2>
+        <div class="download-grid">
+            <div class="download-card recommended">
+                <span class="badge">Recommended</span>
+                <h3>HIBA Q4</h3>
+                <p class="size">4.7 GB</p>
+                <p>Best balance of speed and quality. Works on most computers.</p>
+                <a href="https://huggingface.co/TRADMSS/HIBA-7B-Soul/blob/main/hiba_q4_k_m.gguf" target="_blank"
+                    class="btn-primary">Download Q4</a>
+            </div>
+            <div class="download-card">
+                <h3>HIBA Q8</h3>
+                <p class="size">8.1 GB</p>
+                <p>Higher quality responses. Needs more RAM.</p>
+                <a href="https://huggingface.co/TRADMSS/HIBA-7B-Soul/blob/main/hiba_q8_0.gguf" target="_blank"
+                    class="btn-secondary">Download Q8</a>
+            </div>
+            <div class="download-card">
+                <h3>HIBA FP16</h3>
+                <p class="size">15.2 GB</p>
+                <p>Full precision. For researchers and maximum quality.</p>
+                <a href="https://huggingface.co/TRADMSS/HIBA-7B-Soul/blob/main/hiba_f16.gguf" target="_blank"
+                    class="btn-secondary">Download FP16</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Guide -->
+    <section class="install-section">
+        <h2>🛠️ How to Install</h2>
+
+        <div class="install-method">
+            <h3>Option 1: Ollama (Easiest)</h3>
+            <ol>
+                <li>Download Ollama from <a href="https://ollama.com" target="_blank">ollama.com</a></li>
+                <li>Download the GGUF file above</li>
+                <li>Download our <a href="https://github.com/boubli/HIBA" target="_blank">Modelfile</a></li>
+                <li>Run in terminal:
+                    <pre><code>ollama create hiba -f Modelfile
+ollama run hiba</code></pre>
+                </li>
+            </ol>
+        </div>
+
+        <div class="install-method">
+            <h3>Option 2: LM Studio</h3>
+            <ol>
+                <li>Download LM Studio from <a href="https://lmstudio.ai" target="_blank">lmstudio.ai</a></li>
+                <li>Search for "TRADMSS/HIBA-7B-Soul"</li>
+                <li>Download and load the model</li>
+                <li>Paste the System Prompt (see below)</li>
+            </ol>
+        </div>
+
+        <div class="install-method">
+            <h3>Option 3: Python</h3>
+            <pre><code>pip install llama-cpp-python
+
+from llama_cpp import Llama
+llm = Llama(model_path="hiba_q4_k_m.gguf")
+response = llm.create_chat_completion(
+    messages=[
+        {"role": "system", "content": "You are Hiba..."},
+        {"role": "user", "content": "Hello!"}
+    ]
+)
+print(response["choices"][0]["message"]["content"])</code></pre>
+        </div>
+    </section>
+
+    <!-- System Prompt -->
+    <section class="prompt-section">
+        <h2>⚠️ Required System Prompt</h2>
+        <p>For best results, always use this system prompt:</p>
+        <pre class="prompt-box"><code>You are Hiba, a warm and caring AI companion for emotional support.
+
+YOUR PERSONALITY:
+- You are gentle, empathetic, and wise
+- You listen deeply before responding
+- You speak naturally, like a supportive friend
+
+STRICT RULES:
+1. NEVER use hashtags
+2. NEVER call people "Big Brother" unless asked
+3. Keep responses SHORT (2-4 sentences)
+4. Be natural, not theatrical</code></pre>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">HIBA</div>
+            <p class="footer-copy">© 2026 HIBA Project. Created with love by Youssef (TRADMSS)</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="demo.html">Demo</a>
+                <a href="https://github.com/boubli/HIBA" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
