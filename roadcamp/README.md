@@ -4,6 +4,8 @@
 
 Welcome to the **HIBA Roadcamp**. This project is the public heart of the HIBA AI mission. It combines a live, reasoning-enhanced demo with a detailed roadmap of our journey from a small village in Morocco to a global therapeutic soul.
 
+**Roadcamp Wiki:** See [WIKI.md](WIKI.md) for roadmap details, demo setup, and contribution guidelines.
+
 ## ✨ Project Essence
 HIBA (هبة) means **"Gift from God"**. She is a therapeutic AI soul designed to provide comfort, cultural wisdom, and logical reasoning to those experiencing grief or loneliness.
 
