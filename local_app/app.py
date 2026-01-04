@@ -289,7 +289,7 @@ with gr.Blocks(css=CSS, title="HIBA Pro", theme=gr.themes.Base()) as demo:
     gr.HTML("""
         <div class="header">
             <div class="brand">
-                <img src="file/logo.png" onerror="this.style.display='none'">
+                <img src="file/logo.png" onerror="this.style.display='none'" style="width:36px;height:36px;border-radius:8px;">
                 <span class="brand-text">HIBA Pro</span>
             </div>
             <div class="status">

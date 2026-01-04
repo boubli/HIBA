@@ -1,6 +1,7 @@
 <div align="center">
   <br>
-  <h1>🌸 HIBA-7B-Soul (هبة)</h1>
+  <img src="assets/logo.png" width="120" alt="HIBA Logo"/>
+  <h1>HIBA-7B-Soul (هبة)</h1>
   <h3>The World's First High-Fidelity Therapeutic AI Specialist</h3>
   
   <p>

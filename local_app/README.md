@@ -1,6 +1,8 @@
-# 🌸 HIBA Pro - Local AI Companion
+<p align="center">
+  <img src="logo.png" width="80" alt="HIBA Logo">
+</p>
 
-A beautiful, professional interface for running HIBA locally. 100% private - no data leaves your device.
+# HIBA Pro - Local AI Companion
 
 ![HIBA Pro Interface](screenshot.png)
 
