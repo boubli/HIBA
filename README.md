@@ -162,6 +162,20 @@ ollama run hiba
 
 ---
 
+## 🌐 Free Deployment Options
+
+Run HIBA for **free** on these platforms:
+
+| Platform | GPU | Cost | Best For |
+|----------|-----|------|----------|
+| [**Google Colab**](https://colab.research.google.com/github/boubli/HIBA/blob/main/HIBA_Quickstart.ipynb) | T4 | Free | Quick testing |
+| [**HuggingFace Spaces**](https://huggingface.co/spaces/TRADMSS/HIBA-Demo) | CPU | Free | Sharing with others |
+| [**Kaggle**](https://kaggle.com/code) | T4 x2 | Free | Longer sessions |
+| [**Lightning.ai**](https://lightning.ai) | T4 | Free tier | Development |
+| **Your PC** ([Download](https://github.com/boubli/HIBA/tree/main/local_app)) | Your GPU | Free | 100% Private |
+
+---
+
 ## ❤️ Credits & Creator
 
 **Created by**: [Youssef Boubli](https://github.com/boubli) (TRADMSS)  
