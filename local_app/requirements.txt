@@ -1,0 +1,16 @@
+# HIBA Local - Requirements
+# =========================
+# Install with: pip install -r requirements.txt
+
+# Core LLM
+llama-cpp-python>=0.3.2
+
+# Web Interface
+gradio>=4.0.0
+
+# Voice (Optional - for HIBA to speak)
+edge-tts>=6.1.0
+nest_asyncio>=1.5.0
+
+# Note: For GPU acceleration, install llama-cpp-python with CUDA:
+# CMAKE_ARGS="-DLLAMA_CUBLAS=on" pip install llama-cpp-python
