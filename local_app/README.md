@@ -1,72 +1,112 @@
-# 🌸 HIBA Local - Run HIBA on Your Computer
+# 🌸 HIBA Pro - Local AI Companion
 
-A beautiful local interface for HIBA with voice support. **100% private** - no data leaves your device.
+A beautiful, professional interface for running HIBA locally. 100% private - no data leaves your device.
+
+![HIBA Pro Interface](screenshot.png)
 
 ---
 
-## ⚡ One-Click Setup (Easiest)
+## ⚡ One-Click Setup
 
 ### Windows
-1. Download this folder
-2. **Double-click `setup.bat`**
-3. Wait for download to complete (~5 min)
-4. HIBA opens automatically! 🌸
+```
+Double-click setup.bat
+```
 
-### Mac / Linux
+### Mac/Linux
 ```bash
-chmod +x setup.sh
-./setup.sh
+chmod +x setup.sh && ./setup.sh
 ```
 
 ---
 
-## 🛠️ Manual Setup
+## 🎯 Features
 
-### Step 1: Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### Step 2: Download Model
-```bash
-python download_model.py
-```
-This downloads `hiba_q4_k_m.gguf` (4.5 GB) automatically.
-
-### Step 3: Run HIBA
-```bash
-python app.py
-```
-Opens at `http://127.0.0.1:7860`
-
----
-
-## 🎤 Features
 | Feature | Description |
 |---------|-------------|
-| 🌸 Beautiful UI | Dark glassmorphism theme |
-| 🔊 Voice Output | HIBA can speak! |
-| 🔒 100% Private | Runs offline |
-| ⚡ GPU Support | Fast with NVIDIA GPU |
+| 💬 **Clean Chat UI** | ChatGPT/Gemini-style interface |
+| ⚙️ **Full Control** | Adjust system prompt, temperature, top_p |
+| 🔊 **Voice Output** | HIBA can speak her responses |
+| 🔒 **100% Private** | Runs entirely offline |
+| ⚡ **GPU Accelerated** | Fast responses with NVIDIA GPU |
 
-## 🎀 Voice Options
-- **Girl** - Young girl voice (default)
-- **Arabic** - Arabic girl voice  
-- **Woman** - Adult woman voice
+---
+
+## 💬 Example Conversations
+
+### Stress & Support
+```
+You: I feel stressed today
+
+HIBA: I hear you, habibi. Stress can feel heavy, like carrying 
+water uphill. Take a breath with me. What's weighing on your 
+heart right now?
+```
+
+### Moroccan Wisdom
+```
+You: What does Sabr mean?
+
+HIBA: Sabr means patience, but it's deeper than waiting. It's 
+the quiet strength to trust the timing of your life, like a 
+farmer trusting the rain will come. We say "Sabr zin" - 
+patience is beautiful.
+```
+
+### Encouragement
+```
+You: I failed my exam
+
+HIBA: Failure is not the end - it's a teacher wearing a 
+difficult disguise. In Morocco we say "Li fat mat" - what 
+passed is gone. What matters is what you do with tomorrow.
+```
+
+---
+
+## ⚙️ Settings Guide
+
+| Setting | Default | Description |
+|---------|---------|-------------|
+| **System Prompt** | HIBA's persona | Define her personality |
+| **Temperature** | 0.7 | Higher = more creative |
+| **Top P** | 0.9 | Nucleus sampling threshold |
+| **Max Tokens** | 256 | Response length limit |
+| **Voice** | Girl | Choose voice style |
+
+---
+
+## 🔧 Manual Setup
+
+1. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Download model** (4.5 GB)
+   ```bash
+   python download_model.py
+   ```
+
+3. **Run HIBA**
+   ```bash
+   python app.py
+   ```
+
+Opens at `http://127.0.0.1:7860`
 
 ---
 
 ## ❓ Troubleshooting
 
-**"Model not found" error?**
-- Run `python download_model.py` first
-
-**Voice not working?**
-- Run: `pip install edge-tts`
-
-**Slow responses?**
-- Enable GPU: `CMAKE_ARGS="-DLLAMA_CUBLAS=on" pip install llama-cpp-python`
+| Problem | Solution |
+|---------|----------|
+| Model not found | Run `python download_model.py` |
+| Voice not working | `pip install edge-tts` |
+| Slow responses | Install GPU version of llama-cpp-python |
 
 ---
 
-Created with ❤️ by [Youssef Boubli](https://github.com/boubli) | [Website](https://boubli.github.io/HIBA/) | [HuggingFace](https://huggingface.co/TRADMSS/HIBA-7B-Soul)
+Created with ❤️ by [Youssef Boubli](https://github.com/boubli)
+
+[GitHub](https://github.com/boubli/HIBA) · [HuggingFace](https://huggingface.co/TRADMSS/HIBA-7B-Soul) · [Website](https://boubli.github.io/HIBA/)
