@@ -119,7 +119,27 @@ HIBA is open-source because grief is universal. We need help in these areas:
 
 ## 🚀 Getting Started
 
-### Option 1: Python (Transformers)
+### Option 1: Run Locally (Recommended) 💻
+Download and run HIBA on your computer with our beautiful UI.
+
+**Windows (One-Click):**
+1. [Download the local_app folder](https://github.com/boubli/HIBA/tree/main/local_app)
+2. Double-click `setup.bat`
+3. Wait for setup (~5 min) → HIBA opens automatically! 🌸
+
+**Mac/Linux:**
+```bash
+cd local_app
+chmod +x setup.sh
+./setup.sh
+```
+
+### Option 2: Google Colab (Free GPU)
+Run HIBA completely free in your browser. No installation required.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/boubli/HIBA/blob/main/HIBA_Quickstart.ipynb)
+
+### Option 3: Python (Transformers)
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
@@ -134,14 +154,8 @@ outputs = model.generate(inputs, max_new_tokens=200)
 print(tokenizer.decode(outputs[0]))
 ```
 
-### Option 2: Google Colab (Free GPU)
-Run HIBA completely free in your browser using Google's T4 GPU. No installation required.
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/boubli/HIBA/blob/main/HIBA_Quickstart.ipynb)
-
-### Option 3: Local (Ollama)
+### Option 4: Ollama
 ```bash
-# 1. Download Modelfile from this repo
 ollama create hiba -f Modelfile
 ollama run hiba
 ```

@@ -1,55 +1,72 @@
 # 🌸 HIBA Local - Run HIBA on Your Computer
 
-A beautiful local interface for HIBA with voice support. 100% private - no data leaves your device.
+A beautiful local interface for HIBA with voice support. **100% private** - no data leaves your device.
 
-## Quick Start
+---
 
-### 1. Download the Model
-Download `hiba_q4_k_m.gguf` (4.5 GB) from:
-👉 [HuggingFace Model Page](https://huggingface.co/TRADMSS/HIBA-7B-Soul)
+## ⚡ One-Click Setup (Easiest)
 
-Place it in this folder (same folder as `app.py`).
+### Windows
+1. Download this folder
+2. **Double-click `setup.bat`**
+3. Wait for download to complete (~5 min)
+4. HIBA opens automatically! 🌸
 
-### 2. Install Dependencies
+### Mac / Linux
+```bash
+chmod +x setup.sh
+./setup.sh
+```
+
+---
+
+## 🛠️ Manual Setup
+
+### Step 1: Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-**For GPU acceleration (faster):**
+### Step 2: Download Model
 ```bash
-CMAKE_ARGS="-DLLAMA_CUBLAS=on" pip install llama-cpp-python
+python download_model.py
 ```
+This downloads `hiba_q4_k_m.gguf` (4.5 GB) automatically.
 
-### 3. Run HIBA
+### Step 3: Run HIBA
 ```bash
 python app.py
 ```
-
-Your browser will open automatically at `http://127.0.0.1:7860`
-
-## Features
-- 🌸 Beautiful dark glassmorphism UI
-- 🔊 Voice output (HIBA can speak!)
-- 🔒 100% private - runs locally
-- ⚡ GPU accelerated (if available)
-
-## Voice Options
-| Voice | Description |
-|-------|-------------|
-| 🎀 Girl | Young girl voice (default) |
-| 🌍 Arabic | Arabic girl voice |
-| 👩 Woman | Adult woman voice |
-
-## Troubleshooting
-
-**Model not found?**
-- Make sure `hiba_q4_k_m.gguf` is in the same folder as `app.py`
-
-**Voice not working?**
-- Install edge-tts: `pip install edge-tts`
-
-**Slow responses?**
-- Enable GPU: Reinstall llama-cpp-python with CUDA support
+Opens at `http://127.0.0.1:7860`
 
 ---
-Created with ❤️ by [Youssef Boubli](https://github.com/boubli)
+
+## 🎤 Features
+| Feature | Description |
+|---------|-------------|
+| 🌸 Beautiful UI | Dark glassmorphism theme |
+| 🔊 Voice Output | HIBA can speak! |
+| 🔒 100% Private | Runs offline |
+| ⚡ GPU Support | Fast with NVIDIA GPU |
+
+## 🎀 Voice Options
+- **Girl** - Young girl voice (default)
+- **Arabic** - Arabic girl voice  
+- **Woman** - Adult woman voice
+
+---
+
+## ❓ Troubleshooting
+
+**"Model not found" error?**
+- Run `python download_model.py` first
+
+**Voice not working?**
+- Run: `pip install edge-tts`
+
+**Slow responses?**
+- Enable GPU: `CMAKE_ARGS="-DLLAMA_CUBLAS=on" pip install llama-cpp-python`
+
+---
+
+Created with ❤️ by [Youssef Boubli](https://github.com/boubli) | [Website](https://boubli.github.io/HIBA/) | [HuggingFace](https://huggingface.co/TRADMSS/HIBA-7B-Soul)
