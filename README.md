@@ -190,6 +190,18 @@ Run HIBA for **free** on these platforms:
 
 ---
 
+## 🛠️ HIBA Community Tools
+
+Explore the modular features that power HIBA's soul and community:
+
+| Tool | Description | README |
+|------|-------------|--------|
+| **Wall of Hope** | An interactive gallery of glowing community stories. | [View README](tools/wall-of-hope/README.md) |
+| **Missions of Love** | Daily child-like acts of kindness, generated for everyone. | [View README](tools/missions-of-love/README.md) |
+| **Story Contributions** | A pipeline for users to share and validate stories. | [View README](tools/contributions/README.md) |
+
+---
+
 ## ❤️ Credits & Creator
 
 **Created by**: [Youssef Boubli](https://github.com/boubli) (TRADMSS)  
