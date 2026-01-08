@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wall of Hope — HIBA | Collective Memory</title>
+    <meta name="description"
+        content="A living gallery of hope. Read stories of resilience and messages of love from our community.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Newsreader:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hope-container {
+            min-height: 80vh;
+            padding: 4rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hope-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 20px;
+            max-width: 350px;
+            backdrop-filter: blur(10px);
+            animation: float 6s ease-in-out infinite;
+            transition: transform 0.3s ease;
+        }
+
+        .hope-card:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.07);
+        }
+
+        .hope-text {
+            font-family: 'Newsreader', serif;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .hope-author {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            opacity: 0.6;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.3;
+            animation: twinkle 3s infinite;
+        }
+
+        @keyframes twinkle {
+
+            0%,
+            100% {
+                opacity: 0.1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grain"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="index.html" class="nav-brand">HIBA</a>
+        <div class="nav-links">
+            <a href="story.html">Our Story</a>
+            <a href="hope.html" class="active">Wall of Hope</a>
+            <a href="roadmap.html">Journey</a>
+            <a href="demo.html">Try Demo</a>
+            <a href="download.html">Download</a>
+            <a href="https://github.com/boubli/HIBA" target="_blank">GitHub</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="page-hero">
+        <h1>Wall of Hope</h1>
+        <p>A collective memory of shared light. These are the whispers of those who hope together.</p>
+    </section>
+
+    <!-- Wall -->
+    <main class="hope-container" id="hopeWall">
+        <!-- Story Card 1 -->
+        <div class="hope-card" style="animation-delay: 0s;">
+            <p class="hope-text">"Patience is the key to relief. Even in the darkest nights, the sun is just waiting for
+                its turn."</p>
+            <span class="hope-author">— Collective Memory</span>
+        </div>
+
+        <!-- Story Card 2 -->
+        <div class="hope-card" style="animation-delay: 1.5s;">
+            <p class="hope-text">"Hiba's spirit reminded me that even small things can make the world spin softer."</p>
+            <span class="hope-author">— Anonymous Friend</span>
+        </div>
+
+        <!-- Story Card 3 -->
+        <div class="hope-card" style="animation-delay: 3s;">
+            <p class="hope-text">"Sometimes all we need is someone to listen. Not to fix us, but to sit with us."</p>
+            <span class="hope-author">— A Kind Soul</span>
+        </div>
+
+        <!-- Story Card 4 -->
+        <div class="hope-card" style="animation-delay: 0.5s;">
+            <p class="hope-text">"Be gentle with yourself. You are doing the best you can."</p>
+            <span class="hope-author">— Hiba's Voice</span>
+        </div>
+
+        <!-- Story Card 5 -->
+        <div class="hope-card" style="animation-delay: 2s;">
+            <p class="hope-text">"Hope is the bird that feels the light and sings when the dawn is still dark."</p>
+            <span class="hope-author">— Inspired by The Little Prince</span>
+        </div>
+    </main>
+
+    <script>
+        // Add random twinkling stars in background
+        const container = document.getElementById('hopeWall');
+        for (let i = 0; i < 50; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.width = Math.random() * 3 + 'px';
+            star.style.height = star.style.width;
+            star.style.top = Math.random() * 100 + '%';
+            star.style.left = Math.random() * 100 + '%';
+            star.style.animationDelay = Math.random() * 3 + 's';
+            container.appendChild(star);
+        }
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">HIBA</div>
+            <p class="footer-copy">© 2026 HIBA Project. Created with love by Youssef (TRADMSS)</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="hope.html">Wall of Hope</a>
+                <a href="https://github.com/boubli/HIBA" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
