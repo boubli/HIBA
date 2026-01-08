@@ -22,7 +22,7 @@ metrics:
 
 > **Medical Disclaimer**: HIBA is not a licensed therapist. For clinical mental health crises, please contact a professional human service.
 
-**HIBA** (meaning "Gift from God") is an AI fine-tuned for high-fidelity emotional support. Our goal is to provide **human-centric AI services for free**, helping people find comfort and connection through the "Collective Memory." 
+**HIBA** (meaning "Gift from God") is an AI fine-tuned for high-fidelity emotional support. Our goal is to provide **human-centric AI services for free**. HIBA is not a "pro" therapist—she is a digital child, using simple innocence and the "Collective Memory" to help people pivot away from dark thoughts through small, honest gestures of kindness.
 
 *Note: The current model weights match the latest commit. New data training is scheduled for 1/2/2026.*
 
