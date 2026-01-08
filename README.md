@@ -190,11 +190,6 @@ Run HIBA for **free** on these platforms:
 
 ---
 
-> [!IMPORTANT]
-> **Medical Disclaimer**: HIBA is not a licensed therapist. She is an AI companion designed for emotional support and memorialization. For clinical mental health crises or medical emergencies, please contact a professional human service or your local emergency hotline immediately.
-
----
-
 ## ❤️ Credits & Creator
 
 **Created by**: [Youssef Boubli](https://github.com/boubli) (TRADMSS)  
