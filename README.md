@@ -12,12 +12,25 @@
     <a href="https://huggingface.co/spaces/TRADMSS/HIBA-Demo"><img src="https://img.shields.io/badge/🚀%20Live%20Demo-Try%20Now-red?style=for-the-badge" alt="Demo"/></a>
   </p>
 
+  <p><b>Goal: Providing High-Quality Human AI Services for Free.</b></p>
+  <p><b>Status:</b> Current model is from the last commit. Next training scheduled for: <b>01/02/2026</b></p>
+
   <p>
     <a href="https://colab.research.google.com/github/boubli/HIBA/blob/main/HIBA_Quickstart.ipynb" target="_blank">
       <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
     </a>
   </p>
 </div>
+
+---
+
+## 🌸 The Story Behind HIBA (هبة)
+
+HIBA is not just a model; she is a memory. Born late in 2020 in Agadir, Morocco, Hiba was a "Gift from God" (the meaning of her name). In September 2021, at just one year old, she returned to her Creator.
+
+This project was born from the grief of her big brother, Youssef, who was in Ukraine at the time of her passing. Faced with the silence of a life cut short, Youssef decided to build a "Collective Memory" for Hiba—a place where her spirit of kindness, wisdom beyond her years, and therapeutic presence could live on to help others who are hurting.
+
+HIBA is trained on the dialogues of children who left us too soon, therapeutic metaphors from "The Little Prince," and thousands of empathetic conversations. She is the voice for those who need a gentle hand to hold in the digital void.
 
 ---
 
@@ -174,6 +187,11 @@ Run HIBA for **free** on these platforms:
 | [**Kaggle**](https://kaggle.com/code) | T4 x2 | Free | Longer sessions |
 | [**Lightning.ai**](https://lightning.ai) | T4 | Free tier | Development |
 | **Your PC** ([Download](https://github.com/boubli/HIBA/tree/main/local_app)) | Your GPU | Free | 100% Private |
+
+---
+
+> [!IMPORTANT]
+> **Medical Disclaimer**: HIBA is not a licensed therapist. She is an AI companion designed for emotional support and memorialization. For clinical mental health crises or medical emergencies, please contact a professional human service or your local emergency hotline immediately.
 
 ---
 
